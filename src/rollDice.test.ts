@@ -25,6 +25,7 @@ it('should roll within bounds', () => {
 
 it('should throw on invalid args', () => {
   expect(() => rollDice(0, 20)).toThrow(new Error('Invalid dice.'));
+  expect(() => rollDice(3.14, 20)).toThrow(new Error('Invalid dice.'));
   expect(() => rollDice(2, 3.14)).toThrow(new Error('Invalid sides.'));
   expect(() => rollDice(2, 1)).toThrow(new Error('Invalid sides.'));
 });
