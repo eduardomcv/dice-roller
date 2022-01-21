@@ -1,4 +1,4 @@
-Dice rollers written in TypeScript.
+Dice roller written in TypeScript.
 
 ### Example usage
 - `rollDice(2, 20)` - Rolls two 20-sided dice
