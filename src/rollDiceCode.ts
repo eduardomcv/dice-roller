@@ -1,6 +1,6 @@
 import { rollDice } from './rollDice';
 
-const regex: RegExp = /(\d+)?d(\d+)/gi;
+const regex: RegExp = /^(\d+)?d(\d+)$/i;
 
 export function rollDiceCode(diceCode: string): number[] {
   const result = regex.exec(diceCode);
@@ -9,7 +9,7 @@ export function rollDiceCode(diceCode: string): number[] {
     throw new Error('Invalid dice code.');
   }
 
-  const dice = Number(result[1]);
+  const dice = Number(result[1] ?? 1);
   const sides = Number(result[2]);
 
   return rollDice(dice, sides);
