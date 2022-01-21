@@ -1,4 +1,4 @@
-export function roll(dice: number, sides: number): number[] {
+export function rollDice(dice: number, sides: number): number[] {
   const results = new Array(dice);
 
   for (let i = 0; i < dice; i += 1) {
