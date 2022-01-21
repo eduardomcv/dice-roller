@@ -7,7 +7,7 @@
     "url": "git+https://github.com/eduardomcv/dice-roller.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
     "typescript": "^4.5.5"
@@ -19,6 +19,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.4.7",
     "prettier": "^2.5.1"
   }
 }
