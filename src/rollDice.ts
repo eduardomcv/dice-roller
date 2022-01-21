@@ -1,10 +1,10 @@
 export function rollDice(dice: number, sides: number): number[] {
-  if (!Number.isInteger(dice)) {
-    throw new Error('dice is not an integer');
+  if (dice < 1 || !Number.isInteger(dice)) {
+    throw new Error('Invalid dice.');
   }
 
-  if (!Number.isInteger(sides)) {
-    throw new Error('sides is not an integer');
+  if (sides < 2 || !Number.isInteger(sides)) {
+    throw new Error('Invalid sides.');
   }
 
   const results = new Array(dice);
