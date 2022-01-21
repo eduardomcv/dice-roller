@@ -23,6 +23,19 @@ it('should roll within bounds', () => {
   });
 });
 
+it('should roll integers', () => {
+  const numberOfTests = 1000;
+  const rollsArray = new Array(numberOfTests);
+
+  for (let i = 0; i < numberOfTests; i += 1) {
+    rollsArray[i] = rollDice(1, 20);
+  }
+
+  rollsArray.forEach(([roll]) => {
+    expect(Number.isInteger(roll)).toBe(true);
+  });
+});
+
 it('should throw on invalid args', () => {
   expect(() => rollDice(0, 20)).toThrow(new Error('Invalid dice.'));
   expect(() => rollDice(3.14, 20)).toThrow(new Error('Invalid dice.'));
