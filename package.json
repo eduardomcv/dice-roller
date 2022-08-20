@@ -2,6 +2,7 @@
   "name": "dice-roller",
   "version": "1.0.0",
   "author": "eduardomcv",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eduardomcv/dice-roller.git"
